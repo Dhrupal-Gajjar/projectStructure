@@ -6,5 +6,5 @@ module.exports = {
     // Directory with template
     templateDir: "./template",
   
-    postInitScript: './post-init.script.js',
+    // postInitScript: './post-init.script.js',
   };
