@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { rm } = require('fs').promises;
 const { applyPlugins } = require('./template/plugins');
 
