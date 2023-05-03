@@ -1,0 +1,8 @@
+{
+    "name": "AwesomeProject",
+    "version": "0.0.1",
+    "description": "React Native Structure",
+    "repository": "git@github.com:Dhrupal-Gajjar/projectStructure.git",
+    "author": "",
+    "license": "MIT"
+  }
