@@ -3,7 +3,6 @@ import { View, Text,StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Button, Title, } from 'react-native-paper';
-import { themeCheck } from '../theme/themCheck';
 import { ThemeContext } from '../theme/themeContext';
 const ProfileScreen = ({navigation}:any) => {
 
@@ -20,11 +19,12 @@ const ProfileScreen = ({navigation}:any) => {
 class HomeScreen extends React.Component {
     
     render () {
-        console.log("themeCheck",ThemeContext)
-        
+            
         return (
             <ThemeContext.Consumer>
-                {({theme}) =>(
+                {({theme}) =>
+                {
+                   return(
                         <View style={styles.container}>
                                 <Title style={{color:theme.colors.text}}>Welcome to React Native Home Screen!</Title>
                                 <Button mode="contained" icon="account" color="blue" 
@@ -32,7 +32,7 @@ class HomeScreen extends React.Component {
                                     Go to Profile Screen cvdfd
                                 </Button>
                          </View>
-                    )
+                    )}
                 }
             </ThemeContext.Consumer>
         
