@@ -3,8 +3,10 @@ import { View, Text,StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Button, Title, } from 'react-native-paper';
+import { themeCheck } from '../theme/themCheck';
+import { ThemeContext } from '../theme/themeContext';
 const ProfileScreen = ({navigation}:any) => {
-    
+
   return (
     <View style={styles.container}>
       <Title>Welcome to the Profile Screen!</Title>
@@ -16,29 +18,27 @@ const ProfileScreen = ({navigation}:any) => {
   )
 }
 class HomeScreen extends React.Component {
+    
     render () {
+        console.log("themeCheck",ThemeContext)
+        
         return (
-            <View style={styles.container}>
-            <Title>Welcome to React Native Home Screen!</Title>
-            <Button mode="contained" icon="account" color="blue" 
-              onPress={()=>this.props.navigation.navigate("Profile")}>
-                Go to Profile Screen cvdfd
-            </Button>
-          </View>
+            <ThemeContext.Consumer>
+                {({theme}) =>(
+                        <View style={styles.container}>
+                                <Title style={{color:theme.colors.text}}>Welcome to React Native Home Screen!</Title>
+                                <Button mode="contained" icon="account" color="blue" 
+                                onPress={()=>this.props.navigation.navigate("Profile")}>
+                                    Go to Profile Screen cvdfd
+                                </Button>
+                         </View>
+                    )
+                }
+            </ThemeContext.Consumer>
+        
         )
     }
 }
-// const HomeScreen = ({navigation}:any) => {
-//   return (
-//     <View style={styles.container}>
-//       <Title>Welcome to React Native Home Screen!</Title>
-//       <Button mode="contained" icon="account" color="blue" 
-//         onPress={()=>navigation.navigate("Profile")}>
-//           Go to Profile Screen
-//       </Button>
-//     </View>
-//   )
-// }
 
 const Stack = createNativeStackNavigator();
 
