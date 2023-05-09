@@ -1,15 +1,29 @@
 {
-    "name": "AwesomeProject",
-    "version": "0.0.1",
-    "description": "React Native Structure",
-    "repository": "git@github.com:Dhrupal-Gajjar/projectStructure.git",
-    "author": "",
-    "license": "MIT",
-    "scripts": {
-        "release": "standard-version"
-    },
-    "dependencies": {},
-    "devDependencies": {
-        "standard-version": "^9.5.0"
-    }
+  "name": "reactnativeprojectstructure",
+  "version": "0.0.1",
+  "description": "React Native Structure",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Dhrupal-Gajjar/projectStructure.git"
+  },
+  "author": "Dhrupal Gajjar",
+  "license": "MIT",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Dhrupal-Gajjar/projectStructure/issues"
+  },
+  "homepage": "https://github.com/Dhrupal-Gajjar/projectStructure#readme",
+  "main": "script.js",
+  "keywords": [
+    "React",
+    "Native",
+    "TypeScript",
+    "Template"
+  ]
 }
