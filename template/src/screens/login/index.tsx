@@ -3,7 +3,7 @@ import { View, Text,StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Button, Title, } from 'react-native-paper';
-import { ThemeContext } from '../theme/themeContext';
+import { ThemeContext } from 'theme';
 const ProfileScreen = ({navigation}:any) => {
 
   return (
