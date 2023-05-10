@@ -1,7 +1,6 @@
 {
   "name": "react-native-structure-own",
   "version": "0.0.1",
-  "private": true,
   "description": "React Native Structure",
   "repository": {
     "type": "git",
