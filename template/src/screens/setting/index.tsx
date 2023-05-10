@@ -8,18 +8,15 @@ import { strings } from 'localization';
 class LoginScreen extends React.Component {
     
     render () {
-            
         return (
             <ThemeContext.Consumer>
                 {({theme}) =>
                 {
                    return(
                         <View style={styles.container}>
-                                <Title style={{color:theme.colors.text}}>Welcome to React Native Home Screen!</Title>
+                                <Title style={{color:theme.colors.text}}>Welcome to React Native setting Screen!</Title>
                                 <Button mode="contained" icon="account" color="blue" 
-                                onPress={()=>{
-                                    this.props.navigation.navigate("Tabs")
-                                }}>
+                                onPress={()=>{}}>
                                     {strings.buttontext}
                                 </Button>
                          </View>
