@@ -92,3 +92,4 @@ template//vendor/bundle/
 template/package-lock.json
 .vscode/settings.json
 template/ios/Podfile.lock
+/node_modules
