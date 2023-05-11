@@ -10,7 +10,7 @@ npm install
 
 ### **Change Bundle ID and Project Name**
 
-Enter Name and BundleID 
+Enter Name and BundleID
 
 Notes : Writen project name only if you want change only project name or you want change both project name and bundleID writen both.
 
