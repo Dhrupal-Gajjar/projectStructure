@@ -18,7 +18,7 @@ class LoginScreen extends React.Component {
                                 <Title style={{color:theme.colors.text}}>Welcome to React Native Home Screen!</Title>
                                 <Button mode="contained" icon="account" color="blue" 
                                 onPress={()=>{
-                                    this.props.navigation.navigate("Tabs")
+                                    this.props.navigation.navigate("Drawers")
                                 }}>
                                     {strings.buttontext}
                                 </Button>
