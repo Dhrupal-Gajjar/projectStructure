@@ -19,13 +19,15 @@ if [ "$answer" != "${answer#[Yy]}" ] ;then # this grammar (the #[] operator) mea
     echo Yes
     npm install
     echo ""
-if [[ $name != '' && $bundleid!=""]];
-then
-    npx react-native-rename "$name" -b "$bundleid" --skipGitStatusCheck
-if [[ $name != '' && $bundleid==""]]
-then
-    npx react-native-rename "$name" --skipGitStatusCheck
 
+    npx react-native-rename@latest "$name" -b "$bundleid" --skipGitStatusCheck
+
+  if test -z "$bundleid" 
+    then
+          npx react-native-rename@latest "$name" --skipGitStatusCheck
+    else
+          npx react-native-rename@latest "$name" -b "$bundleid" --skipGitStatusCheck
+    fi
 
 else
     echo No
